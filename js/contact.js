@@ -32,12 +32,10 @@ contactTab.push(perso2);
 
 console.log(contactTab);
 
-
 // tableau d'acces aux options
 const options = ["1 : Lister les contacts", " 2 : Ajouter un contact", " 3 : Quitter"];
 
 console.log("##### Bienvenue dans le gestionaire de contacts ! #####")
-
 
 options.forEach(option => {
   console.log(option);
