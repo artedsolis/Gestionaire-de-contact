@@ -48,3 +48,5 @@ options.forEach(option => {
 console.log(options[0]);
 console.log(options[1]);
 console.log(options[2]);
+
+// Boucle while & condition switch
