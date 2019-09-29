@@ -1,33 +1,35 @@
 // objet et constructeur
 
-var Personaje = {
+var Personne = {
   nom: "",
   prenom: "",
 
   // Retorna la descripción del personaje
-  describir: function () {
-    var descripcion = "Nom : " + this.nom + " , Prenom : " +
-      this.vida;
-    return descripcion;
+  descrire: function () {
+    var description = "Nom : " + this.nom + " , Prenom : " +
+      this.prenom;
+    return description;
   },
 
 };
 
-var perso1 = Object.create(Personaje);
+var perso1 = Object.create(Personne);
 perso1.nom = "Lévisse";
 perso1.prenom = "Carole";
 
-var perso2 = Object.create(Personaje);
+var perso2 = Object.create(Personne);
 perso2.nom = "Nelsonne";
-perso2.pre = "Mélodie";
+perso2.prenom = "Mélodie";
 
-console.log(perso1.describir());
-console.log(perso2.describir());
+console.log(perso1.descrire());
+console.log(perso2.descrire());
 
 
-//var name1 = ("Nom : " + contact.nom + " , " + "Prenom : " + contact.prenom + ", email : ");
+// tableau conteneur des contacts
+var contact = [];
+contact.push(perso1);
+contact.push(perso2);
 
-//console.log(name1);
 
 // tableau d'acces aux options
 const options = ["1 : Lister les contacts", " 2 : Ajouter un contact", " 3 : Quitter"];
