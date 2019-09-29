@@ -26,9 +26,11 @@ console.log(perso2.descrire());
 
 
 // tableau conteneur des contacts
-var contact = [];
-contact.push(perso1);
-contact.push(perso2);
+var contactTab = [];
+contactTab.push(perso1);
+contactTab.push(perso2);
+
+console.log(contactTab);
 
 
 // tableau d'acces aux options
@@ -41,9 +43,9 @@ options.forEach(option => {
   console.log(option);
 });
 
-const option1 = options[0];
-const option2 = options[1];
-const option3 = options[2];
+//const option1 = options[0];
+//const option2 = options[1];
+//const option3 = options[2];
 
 console.log(options[0]);
 console.log(options[1]);
