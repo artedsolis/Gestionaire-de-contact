@@ -23,10 +23,10 @@ perso2.prenom = "Mélodie";
 var name1 = ("Nom : " + perso1.nom + " , prénom: " + perso1.prenom);
 var name2 = ("Nom : " + perso2.nom + " , prénom: " + perso2.prenom);
 
-// tableau conteneur des contacts
-//var contactTab = [];
-//contactTab.push(name1);
-//contactTab.push(name2);
+//afficher la liste de contacts
+var contactTab = [];
+contactTab.push(name1);
+contactTab.push(name2);
 
 //console.log(contactTab);
 
@@ -49,11 +49,7 @@ while (choix !== 0) {
   var choix = Number(prompt("Choisissez une option"));
   switch (choix) {
     case 1:
-      //for (var i = 0; i < contactTab.length; i++) {
-      console.log(name1);
-      console.log(name2);
-      console.log(newName);
-      //}
+      console.log(contactTab);
       break;
     case 2:
       var nom = prompt("Entrer le nom de la personne");
@@ -62,7 +58,7 @@ while (choix !== 0) {
       newPerson.nom = nom;
       newPerson.prenom = prenom;
       var newName = ("Nom : " + newPerson.nom + " , prénom : " + newPerson.prenom);
-      console.log(newName);
+      contactTab.push(newName);
       console.log("Le contact a bien était ajouté !");
       break;
     case 0:
