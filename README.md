@@ -1,2 +1,2 @@
 # Gestionaire-de-contact
-Gestionaire de contacts à travers la console
+Création d'un gestionaire de contacts pour afficher et pouvoir ajouter des nouveaux contacts à travers la console.
