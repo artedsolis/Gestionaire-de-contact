@@ -1,12 +1,11 @@
 // objet et constructeur
-
 var Contact = {
   //initialisation de contact
   init: function (nom, prenom) {
     this.nom = nom;
     this.prenom = prenom;
   },
-  // decrire
+  // function decrire
   decrire: function () {
     return `| ${this.nom} | ${this.prenom} |`;
   }
@@ -20,26 +19,23 @@ var perso2 = Object.create(Contact);
 perso2.nom = "Nelsonne";
 perso2.prenom = "Mélodie";
 
+// creation de deux variables avec leur chaînes de caractères correspondantes
 var name1 = ("Nom : " + perso1.nom + " , prénom: " + perso1.prenom);
 var name2 = ("Nom : " + perso2.nom + " , prénom: " + perso2.prenom);
 
-//afficher la liste de contacts
+//afficher la liste de variables dans un tableau de contacts
 var contactTab = [];
 contactTab.push(name1);
 contactTab.push(name2);
 
-//console.log(contactTab);
 
-// tableau d'acces aux options
+// creation d'un tableau d'acces aux options
 const options = ["1 : Lister les contacts", " 2 : Ajouter un contact", " 0 : Quitter"];
 
 console.log("##### Bienvenue dans le gestionaire de contacts ! #####")
 
-//options.forEach(option => {
-//  console.log(options);
-//});
 
-// Boucle while & condition switch
+// Création d'un boucle while qui parcours le tableau "options" &  d'une condition switch
 
 while (choix !== 0) {
   for (var i = 0; i < options.length; i++) {
@@ -63,5 +59,7 @@ while (choix !== 0) {
       break;
     case 0:
       console.log("Au revoir !");
+    default:
+      console.log("Je n'ai pas compris. Essayez à nouveau.");
   }
 }
